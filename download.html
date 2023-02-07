@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download List</title>
+  <link rel="stylesheet" href="css/dlstyle.css">
+</head>
+
+<body>
+
+  <table>
+    <caption>Download List</caption>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Movie Name</th>
+        <th>Season</th>
+        <th>Episode</th>
+        <th>Qulitay</th>
+        <th>Download</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><img class="mimg" src="images/eptm.jpg">
+        </td>
+        <td>1 </td>
+        <td>1</td>
+        <td>High</td>
+        <td>
+          <a href="video/rke1.mp4" target="_blank" download>
+            <button onclick="downloadStart()">
+              <img class="dlbtn" src="images/dl.jpg" /></button>
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td><img class="mimg" src="images/small-movie1hyku2.jpg">
+        </td>
+        <td>1 </td>
+        <td>2</td>
+        <td>High</td>
+        <td><a href="video/hyku11.mp4" download="hyku11.mp4" target="_blank"><button onclick="downloadStart()"><img
+                class="dlbtn" src="images/dl.jpg" /></button></a></td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td><img class="mimg" src="images/kantara3.jpg">
+        </td>
+        <td>1 </td>
+        <td>1</td>
+        <td>High</td>
+        <td> <a href="video/kantara.mp4" download target="_blank"><button onclick="downloadStart() "><img class="dlbtn"
+                src="images/dl.jpg" /></button></a></td>
+      </tr>
+
+    </tbody>
+  </table>
+  <script>
+    function downloadStart() {
+      alert("Download Complate.\nShow in Your Download Folder");
+    }
+  </script>
+</body>
+
+</html>
